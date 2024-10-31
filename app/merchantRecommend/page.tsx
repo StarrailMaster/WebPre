@@ -21,7 +21,7 @@ const MerchantRecommend = () => {
     setInput('');
 
     try {
-      const response = await axios.post('http://localhost:8080/api/merchant_recommend/generateRecommend', {
+      const response = await axios.post('http://13.55.190.75:8080/api/merchant_recommend/generateRecommend', {
         searchText: input
       });
       const botReply = { sender: 'system', text: response.data.recommendContent };
