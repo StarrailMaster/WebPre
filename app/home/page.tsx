@@ -28,7 +28,7 @@ const Home = () => {
     const userId = localStorage.getItem("userId")
     try {
       setTips("Searching...");
-      const response = await axios.post('http://localhost:8080/api/search', {
+      const response = await axios.post('http://13.55.190.75:8080/api/search', {
         keyword: searchTerm,
         userId: userId
       });
