@@ -16,7 +16,7 @@ const Register = () => {
   const handRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/register', {
+      const response = await axios.post('http://13.55.190.75:8080/api/register', {
         username,
         password,
       });
